@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('./grid.min.css');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: "DM Sans", sans-serif;
+}
+
+/* Reset CSS */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+textarea {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    border:none;
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active{
+    outline:none;
+    box-shadow: none;
+}
+
+ul,
+ol,
+li {
+    list-style-type:none;
+    padding-left:0;
+    margin-left:0;
+}
+
+p{
+    font-size: 16px;
+    line-height:1.5;
+    color: #2b292b;
+}
+
+/* Custom Grid System - Fix Container width */
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 960px !important;
+    }
+}
+
+section{
+    padding-top:80px;
+    padding-bottom: 80px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    /* or 150% */
+    letter-spacing: -0.01em;
+    color: #2B292D;
+}
+
+.landing-page{
+    background-color:#FDDED8;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.landing-page .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.landing-page h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    margin-bottom: 24px;
+}
+
+.landing-page p{
+    margin-bottom: 24px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.37;
+/* or 137% */
+
+    text-align: center;
+    letter-spacing: -0.01em;
+
+    color: #2B292D;
+
+}
+
+.landing-page-button-group button{
+    width: 140px;
+    height: 48px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 24px;
+    /* identical to box height, or 160% */
+    text-align: center;
+    letter-spacing: -0.05em;
+    border-radius: 2px;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.landing-page-button-group button:first-child{
+    color: #FFFFFF;
+    background: #3040C4;
+}
+
+.landing-page-button-group button:last-child{
+  
+    color: #3040C4;
+    background: #FFFFFF;
+  
+}
+
+.testimonials{
+    background-color:#F4F5F7;
+}
+
+.testimonials-list li h1{
+    margin-bottom: 16px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.363636;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.04em;
+    color: #2B292D;
+}
+
+.testimonials-list li:first-child{
+    margin-bottom: 40px;
+}
+
+.program-content strong{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.5px;
+    /* identical to box height, or 150% */
+    letter-spacing: -0.01em;
+    color: #009B4D;
+    margin-bottom: 8px;
+}
+
+.program-content h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 1.0588;
+/* or 106% */
+
+    letter-spacing: -0.03em;
+
+    color: #2B292D;
+    margin-bottom: 24px;
+}
+
+.program-property > div > div{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #FFFFFF;
+    background-blend-mode: overlay, normal;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05), 0px 1px 3px rgba(0, 0, 0, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:24px;
+    padding-bottom:32px;
+    margin-bottom:20px;
+}
+
+.program-property > div > div:last-child{
+    margin-bottom:0;
+}
+
+
+.program-property span{
+    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.333333;
+
+}
+
+.program-property img{
+    height: 195px;
+    width: auto;
+    display: block;
+    margin-bottom: 16px;
+}
+
+
+.curriculum-header strong{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.5px;
+    /* identical to box height, or 150% */
+    letter-spacing: -0.01em;
+    color: #0189D1;
+    margin-bottom: 8px;
+}
+
+.curriculum-header h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 1.0588;
+    /* or 106% */
+    letter-spacing: -0.03em;
+    color: #2B292D;
+    margin-bottom: 24px;
+}
+
+.curriculum-header p{
+    margin-bottom:32px;
+}
+
+.curriculum-apply{
+    background: #3040C4;
+    border-radius: 2px;
+    color: #FFFFFF;
+    padding: 12px 35px;
+}
+
+
+
+.curriculum .container > div:first-child{
+    margin-bottom:48px;
+}
+
+.curriculum-detail p:first-child{
+    margin-bottom: 40px;
+}
+
+.curriculum img{
+    display:none;
+}
+
+
+.banner{
+    padding-top:40px;
+    padding-bottom:40px;
+    background-color: #F2F8FA;
+}
+.banner-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    padding-top:25px;
+    padding-bottom: 25px;
+    margin-bottom:16px;
+}
+
+.banner-image img{
+    width:191.48px;
+    height:auto;
+    
+}
+
+.banner-container{
+    margin-bottom:24px;
+}
+
+.banner-container h1{
+    text-align:center;
+    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 1;
+/* identical to box height, or 100% */
+
+    text-align: center;
+    letter-spacing: -0.05em;
+
+    color: #2B292D;
+    margin-bottom:16px;
+
+}
+
+.banner-container p{
+    text-align: center;
+    
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 1.5;
+/* or 150% */
+
+text-align: center;
+letter-spacing: -0.01em;
+
+color: #2B292D;
+
+}
+
+.banner-apply-form input{
+    padding: 12px 31px;
+    
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: -0.01em;
+
+    color: #7B7B7E;
+    margin-bottom: 8px;
+
+}
+
+.banner-apply-form button{
+    padding: 12px 31px;
+    color: #FFFFFF;
+    background: #3040C4;
+border-radius: 2px;
+margin-bottom:8px;
+}
+
+.banner-apply-form{
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 1.538;
+    /* identical to box height, or 154% */
+
+    text-align: center;
+
+    color: #7B7B7E;
+
+}
+
+.banner-apply-form a{
+
+
+
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 1.538;
+/* identical to box height, or 154% */
+
+text-align: center;
+text-decoration-line: underline;
+
+color: #3040C4;
+
+}
+
+.footer .row{
+    padding-top:24px;
+    padding-bottom:24px;
+}
+
+.footer-list{
+
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 1.714285;
+/* identical to box height, or 171% */
+
+letter-spacing: -0.01em;
+
+color: #807F81;
+
+}
+
+.footer-list li{
+    margin-bottom:8px;
+}
+
+.footer-list li:last-child{
+    margin-bottom:8px;
+}
+
+
+@media screen and (min-width:769px){
+    .landing-page h1{
+        font-size:72px;
+        line-height:0.972;
+    }
+
+    .landing-page p {
+        font-size:22px;
+        line-height:1.454545;
+    }
+
+    .landing-page-button-group button{
+        font-size:18px;
+        line-height: 1.55555;
+        width:160px;
+        padding-top:14px;
+        padding-bottom:14px;
+    }
+
+    .landing-page-button-group button:first-child{
+        margin-right:16px;
+    }
+    
+    .testimonials-list li h1{
+        font-size: 26px;
+        line-height:1.307;
+    }
+
+    .testimonials-list li p{
+        font-size: 22px;
+        line-height:1.45454545;
+    }
+
+
+
+
+    .program-content {
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        text-align:center;
+    }
+
+    .program-content strong{
+        font-size: 22px;
+    line-height: 1.09090909;
+/* identical to box height, or 109% */
+
+    color: #009B4D;
+    margin-bottom: 16px;
+
+    }
+
+    .program-content h1{
+        font-size: 56px;
+        line-height: 1;
+        /* or 100% */
+        margin-bottom: 32px;
+    }
+
+    .program-content p{
+        font-size: 22px;
+        line-height: 1.4545454;
+        margin-bottom: 72px;
+    }
+
+    .program-property span{
+        font-size:20px;
+        line-height:1.2;
+    }
+
+    .program-property > div{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+        align-items: center;
+        text-align:center;
+        padding-left:0;
+        padding-right:0;
+    }
+
+    .program-property > div > div{
+        margin-bottom:0;
+    }
+
+    .curriculum-detail p:first-child{
+    margin-bottom: 0px;
+    }
+    
+    .curriculum-detail{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+       
+    }
+
+    .curriculum img{
+        display:block;
+    }
+
+    .curriculum-header strong{
+        font-size:22px;
+        line-height:1.09090909;
+        margin-bottom: 16px;
+    }
+
+    .curriculum-header h1{
+        font-size:56px;
+        margin-bottom: 32px;
+    }
+
+    .curriculum p{
+        font-size:18px;
+        line-height:1.444444;
+       
+    }
+
+    .curriculum-header p{
+        margin-bottom: 72px;
+    }
+
+    .curriculum-apply{
+        font-size:18px;
+        line-height:1.5555;
+        padding-top:14px;
+        padding-bottom:14px;
+    }
+
+    .curriculum-detail p:first-child{
+        margin-right:30px;
+    }
+
+    .footer-list{
+        display : flex;
+        flex-direction: row;
+        justify-items: flex-start;
+        align-items:center;
+    }
+
+    .footer-list li{
+        margin-right:16px
+    }
+
+    .banner >div > div{
+        display :flex;
+        justify-content: space-between;
+    }
+
+    .banner-container h1
+    {
+        text-align: left;
+        font-size: 40px;
+        line-height:1;
+        margin-bottom: 16px;
+    }
+    .banner-container p{
+        text-align: left;
+        font-size: 22px;
+        line-height: 1.4545454;
+        margin-bottom: 24px;
+    }
+
+    .banner-apply-form div{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding:0;
+    }
+
+    .banner-apply-form input{
+        font-size:18px;
+        line-height: 1.3333;
+        padding-left:0;
+        padding-top: 16px;
+        padding-bottom : 16px;
+    }
+
+    .banner-apply-form button{
+        font-size:18px;
+        line-height:1.33333;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .banner-apply-form span{
+        text-align:left;
+        padding:0;
+        font-size:14px;
+        line-height: 1.7142;
+    }
+
+        
+}
