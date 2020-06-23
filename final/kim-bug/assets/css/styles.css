@@ -202,6 +202,76 @@ button:focus {
   margin-bottom: 40px;
 }
 
+/* banner */
+.banner {
+  padding: 40px 0;
+  background-color: #f2f8fa;
+}
+
+.banner .col-12:first-child {
+  margin-bottom: 16px;
+}
+
+.banner-image {
+  padding: 20px 0;
+}
+
+.banner-image img {
+  display: block;
+  height: 190px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.banner-header {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.banner-header .banner-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  margin-bottom: 16px;
+}
+
+.banner-form {
+  text-align: center;
+}
+
+.banner-form .input-group input {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  border: none;
+  width: 100%;
+}
+
+.banner-form .input-group input:focus {
+  outline: none;
+}
+
+.banner-form .fill-button {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.banner-form span {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.538461538461538‬;
+  letter-spacing: 0;
+  color: #7b7b7e;
+}
+
+.banner-form span a {
+  text-decoration: underline;
+  color: #3040c4;
+}
+
 /* wider than 768px */
 @media screen and (min-width: 768px) {
   p {
@@ -303,6 +373,75 @@ button:focus {
   .curriculum-detail p {
     font-size: 18px;
     line-height: 1.444444444444444‬;
+  }
+
+  /* banner */
+  .banner .col-12:first-child {
+    margin-bottom: 0;
+  }
+
+  .banner-image {
+    padding: 8px 0 7px 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .banner-image img {
+    height: 285px;
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  .banner-header {
+    text-align: left;
+  }
+
+  .banner-header .banner-title {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+
+  .banner-form {
+    text-align: left;
+  }
+
+  .banner-form .input-group {
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: flex-between;
+  }
+
+  .banner-form .input-group input {
+    font-size: 18px;
+    line-height: 1.333333333333333‬;
+    padding: 16px 16px;
+    border: none;
+    width: 362px;
+    margin-right: 8px;
+    margin-bottom: 0;
+  }
+
+  .banner-form .input-group input:focus {
+    outline: none;
+  }
+
+  .banner-form .fill-button {
+    font-size: 18px;
+    line-height: 1.333333333333333‬;
+    letter-spacing: -0.02em;
+    width: 160px;
+    margin-bottom: 0;
+  }
+
+  .banner-form span {
+    font-size: 14px;
+    line-height: 1.714285714285714‬;
+  }
+
+  .banner-form span a {
+    text-decoration: underline;
+    color: #3040c4;
   }
 }
 
