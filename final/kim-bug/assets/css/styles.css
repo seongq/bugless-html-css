@@ -272,6 +272,24 @@ button:focus {
   color: #3040c4;
 }
 
+/* footer */
+footer ul {
+  padding: 24px 0;
+}
+
+footer li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714285714285714‬;
+  letter-spacing: -0.01em;
+  color: #807f81;
+  margin-bottom: 8px;
+}
+
+footer li:last-child {
+  margin-bottom: 0;
+}
+
 /* wider than 768px */
 @media screen and (min-width: 768px) {
   p {
@@ -442,6 +460,26 @@ button:focus {
   .banner-form span a {
     text-decoration: underline;
     color: #3040c4;
+  }
+
+  /* footer */
+  footer {
+    padding: 16px 0;
+  }
+
+  footer ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  footer li {
+    margin-bottom: 0;
+    margin-right: 16px;
+  }
+
+  footer li:last-child {
+    margin-right: 0;
   }
 }
 
